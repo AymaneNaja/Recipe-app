@@ -1,54 +1,67 @@
-import React from 'react'
-import useFetchCateg from '../../CustomHooks/useFetchCateg'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css';
-import Spinner from 'react-bootstrap/Spinner';
-import '@splidejs/splide/css/core';
+import React from 'react'
+import useFetchRanRecipe from '../../CustomHooks/useFetchRanRecipe';
+import '@splidejs/splide/css/sea-green';
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import { Link } from 'react-router-dom';
+import { SpinnerCircular } from 'spinners-react';
+import { Spinner } from 'react-bootstrap';
+import { Circle, Heart } from 'react-spinners-css';
+import {RiEmotionUnhappyLine} from 'react-icons/ri'
 
-
-
-const OPTIONS={
-  height:220,
-  rewind: true,
+const Row = React.memo(({tags}) => {
+  const splideOptions= {
+  arrows:false,
+  type   : 'loop',
+  drag   : 'free',
+  focus  : 'start',
+  perPage: 3,
+  gap:10,
   autoWidth:true,
-  drag:'free',
-  padding:'2em',
-  gap:'1em',
-  pagination:false,
+  padding:'0.5em',
   }
-const Row = ({category,orderby,filter}) => {
-  const {Data,Loading,Err,ErrMsg}=useFetchCateg({category,orderby})
+    const {Data,isErr,isloaded}=useFetchRanRecipe(tags)
+
+    console.log(Data)
   return (
-    <div className='my-1 mx-10'>
-      <h2 className='text-decoration-underline text-blue-400 m-2'>{category}</h2>
-    {!Loading&&!Err?
-      <Splide options={OPTIONS} 
-     >
-            {Data.map(book=>{
+    <div className='bg-slate-100'>
+    <div className='w-full m-auto grid h-fit gap-4 my-6 justify-start items-start relative '>
+        <p className=' formal-text  font-bold text-3xl absolute top-2 left-10 text-slate-500 '>Top Selection of {tags}:</p>
+        
+        {!isErr&&!isloaded?<div className='relative -right-3/4 justify-center items-center my-10   '><Circle color='lightblue'/></div>:null}
+        {!isErr&&isloaded?
+        <Splide
+        options={splideOptions}
+         aria-label="My Favorite Images">
+            {Data.map(recipe=>{
               try{
-              return (
-                <SplideSlide key={book.id}>
-                  <Link to={`/book/${book.id}`}>
-                    <img  className='rounded hover:opacity-60' src={book.volumeInfo.imageLinks.thumbnail}>
-                    </img>
-                  </Link>              
+                return(
+                <SplideSlide key={recipe.id}>
+                  <Link to={`/Recipe/${recipe.id}`}>
+                  <div className='relative hover:-translate-y-0.5 transition-all  ' >
+                  <img className=' w-72
+                  bottom-shadow rounded-lg border-6 border-slate-300
+                   hover:brightness-75 transition-all ' src={recipe.image}/>
+                  <div className='w-72 absolute bottom-0  font-bold  p-2 drop-shadow-lg text-base 
+                  w-62 text-ellipsis  text-white text-bold
+                bg-black bg-opacity-30 rounded-b-lg   '>
+                  <p className='w-full'>{recipe.title}</p>
+                  </div>
+                  </div> 
+                  </Link>
                 </SplideSlide>
 
-              )}catch(err){console.log(err)}
-            })
-            }
-      </Splide>
-      :<div className='flex justify-center align-middle' ><Spinner  animation="grow" />
-    
+                )
+              }catch(err){
+                console.log(err)
+              }
+            })}
+        </Splide>
+        :<p className='text-center text-3xl font-bold text m-20 flex gap-5 items-center hidden'><RiEmotionUnhappyLine
+          className='btn-scale '
+        />couldnt laod the data...</p>}
     </div>
-    
-    }
-
-
-
     </div>
   )
-}
-
+})
 export default Row

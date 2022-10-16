@@ -1,0 +1,583 @@
+
+{"Data":[
+    {
+        "vegetarian": true,
+        "vegan": true,
+        "glutenFree": false,
+        "dairyFree": true,
+        "veryHealthy": false,
+        "cheap": false,
+        "veryPopular": false,
+        "sustainable": false,
+        "lowFodmap": false,
+        "weightWatcherSmartPoints": 10,
+        "gaps": "no",
+        "preparationMinutes": -1,
+        "cookingMinutes": -1,
+        "aggregateLikes": 1,
+        "healthScore": 23,
+        "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+        "license": "CC BY 3.0",
+        "sourceName": "Foodista",
+        "pricePerServing": 159.03,
+        "extendedIngredients": [
+            {
+                "id": 4582,
+                "aisle": "Oil, Vinegar, Salad Dressing",
+                "image": "vegetable-oil.jpg",
+                "consistency": "LIQUID",
+                "name": "canola oil",
+                "nameClean": "cooking oil",
+                "original": "1 tablespoon grapeseed or canola oil",
+                "originalName": "grapeseed or canola oil",
+                "amount": 1,
+                "unit": "tablespoon",
+                "meta": [],
+                "measures": {
+                    "us": {
+                        "amount": 1,
+                        "unitShort": "Tbsp",
+                        "unitLong": "Tbsp"
+                    },
+                    "metric": {
+                        "amount": 1,
+                        "unitShort": "Tbsp",
+                        "unitLong": "Tbsp"
+                    }
+                }
+            },
+            {
+                "id": 11215,
+                "aisle": "Produce",
+                "image": "garlic.png",
+                "consistency": "SOLID",
+                "name": "garlic",
+                "nameClean": "garlic",
+                "original": "3 cloves of garlic, minced",
+                "originalName": "garlic, minced",
+                "amount": 3,
+                "unit": "cloves",
+                "meta": [
+                    "minced"
+                ],
+                "measures": {
+                    "us": {
+                        "amount": 3,
+                        "unitShort": "cloves",
+                        "unitLong": "cloves"
+                    },
+                    "metric": {
+                        "amount": 3,
+                        "unitShort": "cloves",
+                        "unitLong": "cloves"
+                    }
+                }
+            },
+            {
+                "id": 11282,
+                "aisle": "Produce",
+                "image": "brown-onion.png",
+                "consistency": "SOLID",
+                "name": "onion",
+                "nameClean": "onion",
+                "original": "1 small onion, diced small",
+                "originalName": "onion, diced small",
+                "amount": 1,
+                "unit": "small",
+                "meta": [
+                    "diced"
+                ],
+                "measures": {
+                    "us": {
+                        "amount": 1,
+                        "unitShort": "small",
+                        "unitLong": "small"
+                    },
+                    "metric": {
+                        "amount": 1,
+                        "unitShort": "small",
+                        "unitLong": "small"
+                    }
+                }
+            },
+            {
+                "id": 11246,
+                "aisle": "Produce",
+                "image": "leeks.jpg",
+                "consistency": "SOLID",
+                "name": "leek",
+                "nameClean": "leek",
+                "original": "1 stalk of celery or one leek, finely chopped",
+                "originalName": "celery or one leek, finely chopped",
+                "amount": 1,
+                "unit": "stalk",
+                "meta": [
+                    "finely chopped"
+                ],
+                "measures": {
+                    "us": {
+                        "amount": 1,
+                        "unitShort": "stalk",
+                        "unitLong": "stalk"
+                    },
+                    "metric": {
+                        "amount": 1,
+                        "unitShort": "stalk",
+                        "unitLong": "stalk"
+                    }
+                }
+            },
+            {
+                "id": 16058,
+                "aisle": "Canned and Jarred",
+                "image": "chickpeas.png",
+                "consistency": "SOLID",
+                "name": "canned chickpeas",
+                "nameClean": "canned chickpeas",
+                "original": "14 ounces can chickpeas (garbanzo beans), drained and rinsed",
+                "originalName": "chickpeas (garbanzo beans), drained and rinsed",
+                "amount": 14,
+                "unit": "ounces",
+                "meta": [
+                    "drained and rinsed",
+                    "canned",
+                    "(garbanzo beans)"
+                ],
+                "measures": {
+                    "us": {
+                        "amount": 14,
+                        "unitShort": "oz",
+                        "unitLong": "ounces"
+                    },
+                    "metric": {
+                        "amount": 396.893,
+                        "unitShort": "g",
+                        "unitLong": "grams"
+                    }
+                }
+            },
+            {
+                "id": 11887,
+                "aisle": "Pasta and Rice",
+                "image": "tomato-paste.jpg",
+                "consistency": "SOLID",
+                "name": "tomato paste",
+                "nameClean": "tomato paste",
+                "original": "3 tablespoons tomato paste or ketchup (yep, ketchup works great!)",
+                "originalName": "tomato paste or ketchup (yep, ketchup works great!)",
+                "amount": 3,
+                "unit": "tablespoons",
+                "meta": [
+                    "(yep, ketchup works great!)"
+                ],
+                "measures": {
+                    "us": {
+                        "amount": 3,
+                        "unitShort": "Tbsps",
+                        "unitLong": "Tbsps"
+                    },
+                    "metric": {
+                        "amount": 3,
+                        "unitShort": "Tbsps",
+                        "unitLong": "Tbsps"
+                    }
+                }
+            },
+            {
+                "id": 1006972,
+                "aisle": "Ethnic Foods",
+                "image": "harissa-paste.jpg",
+                "consistency": "SOLID",
+                "name": "harissa",
+                "nameClean": "harissa",
+                "original": "2 tablespoons harissa or other chili paste, add depending on the amount of heat you can handle",
+                "originalName": "harissa or other chili paste, add depending on the amount of heat you can handle",
+                "amount": 2,
+                "unit": "tablespoons",
+                "meta": [
+                    "canned"
+                ],
+                "measures": {
+                    "us": {
+                        "amount": 2,
+                        "unitShort": "Tbsps",
+                        "unitLong": "Tbsps"
+                    },
+                    "metric": {
+                        "amount": 2,
+                        "unitShort": "Tbsps",
+                        "unitLong": "Tbsps"
+                    }
+                }
+            },
+            {
+                "id": 14412,
+                "aisle": "Beverages",
+                "image": "water.png",
+                "consistency": "LIQUID",
+                "name": "water",
+                "nameClean": "water",
+                "original": "1 liter (4 cups) water, chicken broth, vegetable broth",
+                "originalName": "liter water, chicken broth, vegetable broth",
+                "amount": 4,
+                "unit": "cups",
+                "meta": [],
+                "measures": {
+                    "us": {
+                        "amount": 4,
+                        "unitShort": "cups",
+                        "unitLong": "cups"
+                    },
+                    "metric": {
+                        "amount": 946.352,
+                        "unitShort": "ml",
+                        "unitLong": "milliliters"
+                    }
+                }
+            },
+            {
+                "id": 20133,
+                "aisle": "Pasta and Rice;Gluten Free;Ethnic Foods",
+                "image": "rice-noodles.jpg",
+                "consistency": "SOLID",
+                "name": "rice noodles",
+                "nameClean": "rice vermicelli",
+                "original": "1 package fresh pasta or a large handful of rice noodles softened in hot",
+                "originalName": "fresh pasta or a large handful of rice noodles softened in hot",
+                "amount": 1,
+                "unit": "package",
+                "meta": [
+                    "fresh",
+                    "hot",
+                    "softened"
+                ],
+                "measures": {
+                    "us": {
+                        "amount": 1,
+                        "unitShort": "pkg",
+                        "unitLong": "package"
+                    },
+                    "metric": {
+                        "amount": 1,
+                        "unitShort": "pkg",
+                        "unitLong": "package"
+                    }
+                }
+            },
+            {
+                "id": 10011457,
+                "aisle": "Produce",
+                "image": "spinach.jpg",
+                "consistency": "SOLID",
+                "name": "spinach leaves",
+                "nameClean": "spinach",
+                "original": "1/2 package of fresh spinach leaves or 3 good handfuls",
+                "originalName": "fresh spinach leaves or 3 good handfuls",
+                "amount": 0.5,
+                "unit": "package",
+                "meta": [
+                    "fresh",
+                    "good"
+                ],
+                "measures": {
+                    "us": {
+                        "amount": 0.5,
+                        "unitShort": "pkg",
+                        "unitLong": "packages"
+                    },
+                    "metric": {
+                        "amount": 0.5,
+                        "unitShort": "pkg",
+                        "unitLong": "packages"
+                    }
+                }
+            },
+            {
+                "id": 9152,
+                "aisle": "Produce",
+                "image": "lemon-juice.jpg",
+                "consistency": "LIQUID",
+                "name": "lemon juice",
+                "nameClean": "lemon juice",
+                "original": "A tablespoon of lemon juice or 1 tablespoon red wine vinegar",
+                "originalName": "A of lemon juice or 1 tablespoon red wine vinegar",
+                "amount": 1,
+                "unit": "tablespoon",
+                "meta": [
+                    "red"
+                ],
+                "measures": {
+                    "us": {
+                        "amount": 1,
+                        "unitShort": "Tbsp",
+                        "unitLong": "Tbsp"
+                    },
+                    "metric": {
+                        "amount": 1,
+                        "unitShort": "Tbsp",
+                        "unitLong": "Tbsp"
+                    }
+                }
+            }
+        ],
+        "id": 653275,
+        "title": "North African Chickpea Soup",
+        "readyInMinutes": 45,
+        "servings": 4,
+        "sourceUrl": "https://www.foodista.com/recipe/FW478NZC/north-african-chickpea-soup",
+        "image": "https://spoonacular.com/recipeImages/653275-556x370.jpg",
+        "imageType": "jpg",
+        "summary": "North African Chickpea Soup might be a good recipe to expand your soup collection. This recipe serves 4. One serving contains <b>361 calories</b>, <b>9g of protein</b>, and <b>6g of fat</b>. For <b>$1.59 per serving</b>, this recipe <b>covers 21%</b> of your daily requirements of vitamins and minerals. It can be enjoyed any time, but it is especially good for <b>Autumn</b>. It is a good option if you're following a <b>dairy free, lacto ovo vegetarian, and vegan</b> diet. 1 person has tried and liked this recipe. A mixture of chickpeas, water, spinach leaves, and a handful of other ingredients are all it takes to make this recipe so yummy. Not a lot of people really liked this African dish. It is brought to you by Foodista. From preparation to the plate, this recipe takes approximately <b>approximately 45 minutes</b>. Overall, this recipe earns a <b>pretty good spoonacular score of 62%</b>. Similar recipes are <a href=\"https://spoonacular.com/recipes/north-african-chickpea-and-kale-soup-158497\">North African Chickpean and Kale Soup</a>, <a href=\"https://spoonacular.com/recipes/north-african-soup-vegetarian-101246\">North African Soup (Vegetarian)</a>, and <a href=\"https://spoonacular.com/recipes/north-african-fish-soup-95183\">North African Fish Soup</a>.",
+        "cuisines": [
+            "African"
+        ],
+        "dishTypes": [
+            "soup"
+        ],
+        "diets": [
+            "dairy free",
+            "lacto ovo vegetarian",
+            "vegan"
+        ],
+        "occasions": [
+            "fall",
+            "winter"
+        ],
+        "winePairing": {
+            "pairedWines": [
+                "pinotage",
+                "chenin blanc",
+                "riesling"
+            ],
+            "pairingText": "Pinotage, Chenin Blanc, and Riesling are great choices for African. The best wine for African dishes will depend on the dish, but a fruity, aromatic white wine is a safe bet for spicy dishes while pinotage would be a traditional match for South African cuisine. You could try Graham Beck Game Reserve Pinotage. Reviewers quite like it with a 4.1 out of 5 star rating and a price of about 19 dollars per bottle.",
+            "productMatches": [
+                {
+                    "id": 457662,
+                    "title": "Graham Beck Game Reserve Pinotage",
+                    "description": "A 'proudly South African' cultivar exhibiting aromas of ripe cherry, strawberries and plums with ripe red berry fruit and spices on the palate. This full structured and well balanced wine rewards with a juicy but elegant mouthfeel and silky soft tannins. \nEnjoy with slow-cooked casseroles, fillet, pastas, robust cheeses or a good old fashioned barbeque.",
+                    "price": "$18.99",
+                    "imageUrl": "https://spoonacular.com/productImages/457662-312x231.jpg",
+                    "averageRating": 0.82,
+                    "ratingCount": 6,
+                    "score": 0.7673684210526315,
+                    "link": "https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Fgraham-beck-game-reserve-pinotage-2013%2F148292"
+                }
+            ]
+        },
+        "instructions": "In a large soup pot add the oil, onions and celery.  Cook over medium low heat until translucent.  Add the garlic and saute until fragrant.   Add the tomato paste and harissa.  Cook a minute then add the water or stock slowly while stirring to combine the flavor paste in the pot with the liquids.  Throw in the chickpeas and bring to a boil.  As soon as it reaches a boil, reduce heat to a simmer.\nAdd the pasta and cook according to the package directions.  My suggestion is that if you are using fresh pasta, give it a rinse under tap water to remove the starch before adding it to the soup.  It might make the broth cloudy.  If using rice noodles add them right before serving to prevent overcooked mushy noodles.  To cook rice noodles place them in a shallow dish and cover with hot water for 10-15 minutes to soften.\nJust before serving taste for seasoning, adjust to your taste.  Adding too much salt earlier on could make things too salty because some of the ingredients can bring a lot of salt to the pot.  Then add the spinach, it will only take a minute to shrink into nearly nothing, but it is sure a powerhouse vegetable that amps up the nutrition in this meal quickly and without fuss.  A squeeze of fresh lemon juice after it has been taken off the heat will add a nice bright flavor to perk up those dreary dark days of winter.  Enjoy with some crusty bread.  A meal you can feel good about, filling yet light.",
+        "analyzedInstructions": [
+            {
+                "name": "",
+                "steps": [
+                    {
+                        "number": 1,
+                        "step": "In a large soup pot add the oil, onions and celery.  Cook over medium low heat until translucent.",
+                        "ingredients": [
+                            {
+                                "id": 11143,
+                                "name": "celery",
+                                "localizedName": "celery",
+                                "image": "celery.jpg"
+                            },
+                            {
+                                "id": 11282,
+                                "name": "onion",
+                                "localizedName": "onion",
+                                "image": "brown-onion.png"
+                            },
+                            {
+                                "id": 0,
+                                "name": "soup",
+                                "localizedName": "soup",
+                                "image": ""
+                            },
+                            {
+                                "id": 4582,
+                                "name": "cooking oil",
+                                "localizedName": "cooking oil",
+                                "image": "vegetable-oil.jpg"
+                            }
+                        ],
+                        "equipment": [
+                            {
+                                "id": 404752,
+                                "name": "pot",
+                                "localizedName": "pot",
+                                "image": "stock-pot.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "number": 2,
+                        "step": "Add the garlic and saute until fragrant.",
+                        "ingredients": [
+                            {
+                                "id": 11215,
+                                "name": "garlic",
+                                "localizedName": "garlic",
+                                "image": "garlic.png"
+                            }
+                        ],
+                        "equipment": []
+                    },
+                    {
+                        "number": 3,
+                        "step": "Add the tomato paste and harissa.  Cook a minute then add the water or stock slowly while stirring to combine the flavor paste in the pot with the liquids.  Throw in the chickpeas and bring to a boil.  As soon as it reaches a boil, reduce heat to a simmer.",
+                        "ingredients": [
+                            {
+                                "id": 11887,
+                                "name": "tomato paste",
+                                "localizedName": "tomato paste",
+                                "image": "tomato-paste.jpg"
+                            },
+                            {
+                                "id": 16057,
+                                "name": "chickpeas",
+                                "localizedName": "chickpeas",
+                                "image": "chickpeas.png"
+                            },
+                            {
+                                "id": 1006972,
+                                "name": "harissa",
+                                "localizedName": "harissa",
+                                "image": "harissa-paste.jpg"
+                            },
+                            {
+                                "id": 1006615,
+                                "name": "stock",
+                                "localizedName": "stock",
+                                "image": "chicken-broth.png"
+                            },
+                            {
+                                "id": 14412,
+                                "name": "water",
+                                "localizedName": "water",
+                                "image": "water.png"
+                            }
+                        ],
+                        "equipment": [
+                            {
+                                "id": 404752,
+                                "name": "pot",
+                                "localizedName": "pot",
+                                "image": "stock-pot.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "number": 4,
+                        "step": "Add the pasta and cook according to the package directions.  My suggestion is that if you are using fresh pasta, give it a rinse under tap water to remove the starch before adding it to the soup.  It might make the broth cloudy.  If using rice noodles add them right before serving to prevent overcooked mushy noodles.  To cook rice noodles place them in a shallow dish and cover with hot water for 10-15 minutes to soften.",
+                        "ingredients": [
+                            {
+                                "id": 20133,
+                                "name": "rice noodles",
+                                "localizedName": "rice noodles",
+                                "image": "dried-rice-noodles.jpg"
+                            },
+                            {
+                                "id": 20093,
+                                "name": "fresh pasta",
+                                "localizedName": "fresh pasta",
+                                "image": "fusilli.jpg"
+                            },
+                            {
+                                "id": 20420,
+                                "name": "pasta",
+                                "localizedName": "pasta",
+                                "image": "fusilli.jpg"
+                            },
+                            {
+                                "id": 10020027,
+                                "name": "starch",
+                                "localizedName": "starch",
+                                "image": ""
+                            },
+                            {
+                                "id": 1006615,
+                                "name": "broth",
+                                "localizedName": "broth",
+                                "image": "chicken-broth.png"
+                            },
+                            {
+                                "id": 14412,
+                                "name": "water",
+                                "localizedName": "water",
+                                "image": "water.png"
+                            },
+                            {
+                                "id": 0,
+                                "name": "soup",
+                                "localizedName": "soup",
+                                "image": ""
+                            }
+                        ],
+                        "equipment": [],
+                        "length": {
+                            "number": 15,
+                            "unit": "minutes"
+                        }
+                    },
+                    {
+                        "number": 5,
+                        "step": "Just before serving taste for seasoning, adjust to your taste.",
+                        "ingredients": [
+                            {
+                                "id": 1042027,
+                                "name": "seasoning",
+                                "localizedName": "seasoning",
+                                "image": "seasoning.png"
+                            }
+                        ],
+                        "equipment": []
+                    },
+                    {
+                        "number": 6,
+                        "step": "Adding too much salt earlier on could make things too salty because some of the ingredients can bring a lot of salt to the pot.  Then add the spinach, it will only take a minute to shrink into nearly nothing, but it is sure a powerhouse vegetable that amps up the nutrition in this meal quickly and without fuss.  A squeeze of fresh lemon juice after it has been taken off the heat will add a nice bright flavor to perk up those dreary dark days of winter.  Enjoy with some crusty bread.  A meal you can feel good about, filling yet light.",
+                        "ingredients": [
+                            {
+                                "id": 10018029,
+                                "name": "crusty bread",
+                                "localizedName": "crusty bread",
+                                "image": "crusty-bread.jpg"
+                            },
+                            {
+                                "id": 9152,
+                                "name": "lemon juice",
+                                "localizedName": "lemon juice",
+                                "image": "lemon-juice.jpg"
+                            },
+                            {
+                                "id": 11583,
+                                "name": "vegetable",
+                                "localizedName": "vegetable",
+                                "image": "mixed-vegetables.png"
+                            },
+                            {
+                                "id": 10011457,
+                                "name": "spinach",
+                                "localizedName": "spinach",
+                                "image": "spinach.jpg"
+                            },
+                            {
+                                "id": 2047,
+                                "name": "salt",
+                                "localizedName": "salt",
+                                "image": "salt.jpg"
+                            }
+                        ],
+                        "equipment": [
+                            {
+                                "id": 404752,
+                                "name": "pot",
+                                "localizedName": "pot",
+                                "image": "stock-pot.jpg"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "originalId": null,
+        "spoonacularSourceUrl": "https://spoonacular.com/north-african-chickpea-soup-653275"
+    }
+]}

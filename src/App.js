@@ -1,32 +1,28 @@
+import Nav from "./components/Nav/Nav";
 
-import Nav from "./components/NavBar/Nav";
-import { BrowserRouter as Router ,Route,Routes} from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from "./components/HOME/Home";
-import Book from "./components/Book/Book";
-import Favorites from "./components/Favorites/Favorites";
-import Footer from "./components/Footer/Footer";
-import SearchResults from "./components/NavBar/SearchResults";
+
+import Home from './components/Home/Home'
 import { SearchProvider } from "./Contexts/SearchContext";
-
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import SearchResults from "./components/SearchResults/SearchResults";
+import Recipe from "./components/Recipe/Recipe";
+import Footer from "./components/Footer.js/Footer";
 
 function App(){
 
-
 return (
-    <div className="">
+    <div className="relative recipe-app">
+    <Router>
     <SearchProvider>
-       <Router>
-            <Nav/>
-            <Routes>
-                <Route path="/" element={<Home/>} exact></Route>
-                <Route path="/book/:id" element={<Book/>} exact></Route>
-                <Route path="/favorites" element={<Favorites/>} exact></Route>
-                <Route path="/Search/:title" element={<SearchResults/>} exact></Route>
-            </Routes>
-       <Footer/>
-       </Router>
+        <Nav/>
+        <Routes>
+            <Route path='/'  element={<Home/>} />
+            <Route path='/search/:query/:searchFor'  element={<SearchResults/>} />
+            <Route path='/Recipe/:id' exact element={<Recipe/>} />
+        </Routes>
+        <Footer/>
     </SearchProvider>
+    </Router>
     </div>
     );
 }
