@@ -1,9 +1,9 @@
-import { Circle} from 'react-spinners-css';
+import { Default} from 'react-spinners-css';
 import { Link, useParams } from 'react-router-dom'
 import useFetchRecipe from '../../CustomHooks/useFetchRecipe '
 import {RiEmotionUnhappyLine} from 'react-icons/ri'
 import { useState, CSSProperties } from "react";
-import ClipLoader from "react-spinners/ClipLoader";
+
 import React from 'react';
 import { memo } from 'react';
 
@@ -11,15 +11,13 @@ import { memo } from 'react';
 
 const SearchResults = memo(() => {
     const link=useParams()
-    const {Data,isErr,isloaded}=useFetchRecipe(link.query)
-    console.log(Data,isErr,isloaded)
-  
+    const {Data,isErr,isloaded}=useFetchRecipe(link.query)  
   return (
     <div className='w-full mx-auto flex justify-center mt-10 flex-wrap items-start'>
     <div >
-      <h1 className='text-3xl font-bold flex gap-1 mb-6 text-center  justify-center'>Results For <p className='underline'>{link.searchFor} </p>Recipes:</h1>
+      <h1 className='text-3xl font-bold flex gap-1 mb-6 text-center  justify-center text-slate-600'>{`${Data.length}`} Results For <p className=' first-letter:uppercase'>{link.searchFor} </p>Recipe</h1>
       <div className=' right-2/4 -bottom-3/4 '>
-      {!isloaded && !isErr ?<div className='relative -right-3/4 justify-center items-center my-10   '><Circle color='lightblue'/></div>:null}
+      {!isloaded && !isErr ?<div className='relative  text-center  '><Default color='gray'/><p className='font-bold text-lg text-gray-600'>loading...</p></div>:null}
       </div>
           {!isErr&& isloaded ?
           <>
@@ -31,7 +29,7 @@ const SearchResults = memo(() => {
                 className='w-fit relative rounded-lg hover:brightness-95 hover:-translate-y-1 bg-gray-300 p-1 
                 transition-all' key={recipe.id}>
                 <Link to={`/Recipe/${recipe.id}`}>
-                  <img className=' brightness-55 rounded-lg
+                  <img className=' brightness-55 rounded-lg max-w-sm
                   ' src={recipe.image}></img>
                   <p className='w-full absolute
                   text-xl bottom-0 py-1 px-3 text-white font-bold text-ellipsis h-fit 

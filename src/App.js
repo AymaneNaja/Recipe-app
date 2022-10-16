@@ -17,7 +17,9 @@ return (
         <Nav/>
         <Routes>
             <Route path='/'  element={<Home/>} />
-            <Route path='/search/:query/:searchFor'  element={<SearchResults/>} />
+            <Route 
+            exact
+            path='/search/:query/:searchFor'  element={<SearchResults/>} />
             <Route path='/Recipe/:id' exact element={<Recipe/>} />
         </Routes>
         <Footer/>

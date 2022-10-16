@@ -6,7 +6,7 @@ import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import { Link } from 'react-router-dom';
 import { SpinnerCircular } from 'spinners-react';
 import { Spinner } from 'react-bootstrap';
-import { Circle, Heart } from 'react-spinners-css';
+import { Default, Heart } from 'react-spinners-css';
 import {RiEmotionUnhappyLine} from 'react-icons/ri'
 
 const Row = React.memo(({tags}) => {
@@ -21,14 +21,12 @@ const Row = React.memo(({tags}) => {
   padding:'0.5em',
   }
     const {Data,isErr,isloaded}=useFetchRanRecipe(tags)
-
     console.log(Data)
   return (
     <div className='bg-slate-100'>
-    <div className='w-full m-auto grid h-fit gap-4 my-6 justify-start items-start relative '>
+    <div className='w-full m-auto grid h-fit gap-4 my-6  relative '>
         <p className=' formal-text  font-bold text-3xl absolute top-2 left-10 text-slate-500 '>Top Selection of {tags}:</p>
-        
-        {!isErr&&!isloaded?<div className='relative -right-3/4 justify-center items-center my-10   '><Circle color='lightblue'/></div>:null}
+        {!isErr&&!isloaded?<div className='text-center relative py-16'><Default className='text-center' color='gray'/><p className='font-bold text-lg text-gray-600'>loading...</p></div>:null}
         {!isErr&&isloaded?
         <Splide
         options={splideOptions}

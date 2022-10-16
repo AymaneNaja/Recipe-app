@@ -11,7 +11,7 @@ const CuisinesCatalog = ({Tag,Options,svg=false,svgType,color,textColor}) => {
       {Options.map((opt,index)=>{
         return (
           <Link to={`/search/${Tag}=${opt.value}/${opt.value} `}
-            key={index} className=' bg-slate-300 w-28 h-20  rounded-lg relative overflow-hidden border-2  text-gray-600 hover:bg-opacity-60 hover:text-gray-500 transition-all
+            key={index} className=' bg-slate-300 w-28 h-20  rounded-lg relative overflow-hidden border  text-gray-600 hover:bg-opacity-60 hover:text-gray-500 transition-all
            hover:border border-gray-400 '
           style={{backgroundColor:color=='base'?'':color,color:textColor==='base'?'':textColor}}>
           

@@ -1,6 +1,5 @@
 {
-  "homepage": "https://github.com/AymaneNaja/Recipe-app.git",
-  "name": "react-task-tracker",
+  "name": "Recipe-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

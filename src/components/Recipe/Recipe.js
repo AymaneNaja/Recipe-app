@@ -3,7 +3,7 @@ import { DietComp } from './DietComp';
 import { useParams } from "react-router-dom"
 import useFetchSingleRecipe from "../../CustomHooks/useFetchSingleRecipe"
 import { TimeReady } from './TimeReady';
-import { ClipLoader } from 'react-spinners';
+import { Default } from  'react-spinners-css';
 import { RecipeImg } from './RecipeImg';
 import { RecipeTitle } from './RecipeTitle';
 import { Servings } from './Servings';
@@ -370,13 +370,11 @@ const data={
 const Recipe = () => {
     const Recipe=useParams()
     const {Data,isErr,isloaded}=useFetchSingleRecipe(Recipe.id)
-    console.log(Data)
   return (
     <div className='grid w-10/12 justify-center mx-auto my-20'>
-        <div className='absolute right-2/4 -bottom-3/4 '>
-        <ClipLoader color={'purple'} loading={!isloaded} size={100} />
-        </div>
-         {isloaded&&!isErr?
+        {!isloaded?<div className='text-center py-20'><Default color='gray'/>
+        <p className='font-bold text-lg text-gray-600'>loading...</p></div>:null}
+        {isloaded&&!isErr?
          <div>
          {Data.map(recipe=>{
           return(

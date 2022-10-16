@@ -2,10 +2,7 @@
 import { useMemo } from "react"
 import { useState,useEffect } from "react"
 
-
-// 5e5d1abb3d3d482093230b2697a4d10c
-// 231517d460e44328953fbfcffeeececd
-const APIKEY='5e5d1abb3d3d482093230b2697a4d10c'
+const APIKEY='231517d460e44328953fbfcffeeececd'
 const useFetchRecipe = (query=null) => {
     const URL=`https://api.spoonacular.com/recipes/complexSearch?${query}&number=50&apiKey=${APIKEY}`
     const [Data,setData]=useState([])
@@ -30,7 +27,7 @@ const useFetchRecipe = (query=null) => {
             }
             }
             FetchRecipe()
-    },[])
+    },[query])
    
     return {Data,isErr,isloaded}
 }
