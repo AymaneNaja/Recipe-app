@@ -379,8 +379,8 @@ const Recipe = () => {
          {Data.map(recipe=>{
           return(
             <div  key={recipe.id}
-            className='flex justify-start items-start gap- '>
-              <div className='w-2/4 grid justify-center m-auto '>
+            className='flex justify-start items-start gap-2 '>
+              <div className='w-6/10 grid justify-center m-auto overflow-auto '>
                 <RecipeTitle recipe={recipe} />
                 <RecipeImg recipe={recipe} />
                 <CuisineComp  recipe={recipe}   />
