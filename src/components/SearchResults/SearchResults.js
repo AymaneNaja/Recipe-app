@@ -2,12 +2,7 @@ import { Default} from 'react-spinners-css';
 import { Link, useParams } from 'react-router-dom'
 import useFetchRecipe from '../../CustomHooks/useFetchRecipe '
 import {RiEmotionUnhappyLine} from 'react-icons/ri'
-import { useState, CSSProperties } from "react";
-
-import React from 'react';
 import { memo } from 'react';
-
-
 
 const SearchResults = memo(() => {
     const link=useParams()
